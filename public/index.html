@@ -14,6 +14,7 @@
         padding-top: 20px;
         padding-bottom: 40px;
         background-color: #fbf3e8;
+        color: #5c493d;
       }
 
       /* Custom container */
@@ -29,7 +30,6 @@
       .jumbotron {
         margin: 60px 0;
         text-align: center;
-        color: #5c493d;
       }
       .jumbotron h1 {
         font-size: 72px;
@@ -47,6 +47,33 @@
       .marketing p + h4 {
         margin-top: 28px;
       }
+
+      .flex-video {
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 67.5%;
+        height: 0;
+        margin-bottom: 16px;
+        overflow: hidden;
+      }
+
+      .flex-video.widescreen {
+        padding-bottom: 57.25%;
+      }
+
+      .flex-video.vimeo {
+        padding-top: 0;
+      }
+
+      .flex-video iframe,
+      .flex-video object,
+      .flex-video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     </style>
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -58,20 +85,13 @@
   <body>
     <div class="container-narrow">
 
-      <iframe src="http://player.vimeo.com/video/58010110?byline=0&amp;portrait=0" width="699" height="393" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      <div class="flex-video widescreen vimeo"><iframe src="http://player.vimeo.com/video/58010110?byline=0&amp;portrait=0" width="699" height="393" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
 
-      <div class="jumbotron">
-        <p class="lead">
-	  The Wilderness Embassy aims to help children learn more about the relationship between humans, animals and our planet by promoting creative outdoor activities.
-	</p>
-        <a class="btn btn-large btn-success" href="http://foend.no/Project/995c7965-79e8-499a-a4fa-c0cdd2374e30">Please help us make the dream a reality!</a>
-      </div>
+      <p class="lead">Wilderness Embassy is storybook&ndash;website where children can meet fictional characters, scientists and philosophers with new and interesting things to say about our close relationship to animals and the planet.</p>
 
-      <p class="lead">
+      <p class="lead">We hope to launch the website soon. You can keep track of our progress on <a href="https://www.facebook.com/wildernessembassy">our FaceBook page</a>. For now, we leave you with some artwork from Mia Sk&#229;re, our project&#8217;s talented illustrator!</p>
 
-      </p>
-
-      <div class="row-fluid marketing">
+      <div class="row-fluid">
         <div class="span4">
 	  <img src="/img/3.jpg" class="img-polaroid img-rounded">
         </div>
@@ -85,13 +105,7 @@
         </div>
       </div>
 
-      <div class="jumbotron">
-        <p class="lead">
-	  Supporting the project with NOK 500 or more gives you access to framed pieces of original artwork from our talented illustrator, Mia Sk&#229;re!</p>
-	<a class="btn btn-large btn-success" href="http://foend.no/Project/995c7965-79e8-499a-a4fa-c0cdd2374e30">So, fund the project today!</a>
-      </div>
-
-    </div> <!-- /container -->
+    </div>
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery.min.js"></script>
